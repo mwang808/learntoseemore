@@ -2,56 +2,154 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Learn to See More</title>
 
 <style>
+
 body{
-    font-family:Arial,sans-serif;
-    max-width:900px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width:1100px;
     margin:auto;
-    padding:60px;
+    padding:60px 40px;
+    color:#222;
     line-height:1.6;
 }
 
-h1{
-    font-size:48px;
+/* ---------- Hero Section ---------- */
+
+.hero{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin-bottom:35px;
 }
+
+.logo img{
+    width:220px;
+    display:block;
+}
+
+.hero-text h1{
+    font-size:72px;
+    margin:0;
+    font-weight:700;
+}
+
+.hero-text h2{
+    font-size:34px;
+    margin-top:15px;
+    color:#444;
+    font-weight:600;
+}
+
+/* ---------- Description ---------- */
+
+.description{
+    font-size:26px;
+    margin:20px 0 50px 0;
+}
+
+/* ---------- Cards ---------- */
 
 .card{
     border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    margin-top:20px;
+    border-radius:15px;
+    padding:28px 32px;
+    margin-bottom:30px;
 }
+
+.card h3{
+    margin-top:0;
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+.card p{
+    font-size:24px;
+    margin:0;
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+    margin-top:60px;
+    color:#777;
+    font-size:22px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:700px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:25px;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text h2{
+    font-size:26px;
+}
+
+.logo img{
+    width:180px;
+}
+
+.description{
+    font-size:20px;
+}
+
+.card h3{
+    font-size:28px;
+}
+
+.card p{
+    font-size:20px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>Learn to See More</h1>
+<div class="hero">
 
-<h2>Notice what others overlook.</h2>
+    <div class="logo">
+        <img src="logo.png" alt="Learn to See More Logo">
+    </div>
 
-<p>
-Learn to See More is a growing educational project that helps curious learners
-discover hidden details, avoid common misconceptions, and develop sharper observation skills.
+    <div class="hero-text">
+        <h1>Learn to See More</h1>
+        <h2>Look deeper. See more.</h2>
+    </div>
+
+</div>
+
+<p class="description">
+Learn to See More is an educational project that helps curious learners notice what others overlook. Through short, engaging guides to the world's greatest artworks, we explore why each masterpiece is famous, why it matters, and what to look for when you see it in person.
 </p>
 
 <div class="card">
-<h3>🏛 Museum Masterpieces</h3>
+    <h3>🏛 Museum Masterpieces</h3>
+    <p>See famous artworks through new eyes.</p>
+<p></p>
+ <p>
+        Learn to See More: Masterpieces of the Louvre.
+    </p>
 
-See famous artworks through new eyes.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=8O61fJp6nBV-e6ws&amp;list=PLPCjAZ1ITkDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="card">
-<h3>➗ Common Math Mistakes</h3>
-
-Learn why smart students make common mistakes—and how to avoid them.
-</div>
-
-<p style="margin-top:50px">
+<p class="footer">
 Website under construction.
 </p>
 
