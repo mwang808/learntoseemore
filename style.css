@@ -1,0 +1,222 @@
+/* ===========================
+   Learn to See More
+   =========================== */
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 30px;
+    color:#222;
+    line-height:1.7;
+    background:#fafafa;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin-bottom:40px;
+}
+
+.logo img{
+    width:200px;
+}
+
+h1{
+    font-size:60px;
+    margin:0;
+}
+
+h2{
+    color:#555;
+    font-weight:500;
+    margin-top:10px;
+}
+
+.description{
+    font-size:24px;
+    margin-bottom:45px;
+}
+
+/* ---------- Buttons ---------- */
+
+.button{
+
+    display:inline-block;
+
+    background:#c40000;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    background:#980000;
+
+}
+
+/* ---------- Gallery ---------- */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+    margin-top:40px;
+
+}
+
+/* ---------- Card ---------- */
+
+.video-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    border:1px solid #ddd;
+
+    transition:.25s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/* ---------- Thumbnail ---------- */
+
+.video-card img{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/* ---------- Text ---------- */
+
+.video-content{
+
+    padding:22px;
+
+}
+
+.video-content h3{
+
+    margin-top:0;
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+.video-content p{
+
+    font-size:19px;
+
+    color:#444;
+
+}
+
+/* ---------- Watch Button ---------- */
+
+.watch{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    color:#c40000;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+}
+
+.watch:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    text-align:center;
+
+    margin-top:60px;
+
+    color:#777;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:700px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.logo img{
+
+    width:170px;
+
+}
+
+h1{
+
+    font-size:42px;
+
+}
+
+.description{
+
+    font-size:20px;
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+}
