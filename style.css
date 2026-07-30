@@ -69,6 +69,20 @@ h2{
 
 }
 
+.card {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card p {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.card a {
+    display: inline-block;
+}
+
 /* ---------- Gallery ---------- */
 
 .gallery{
